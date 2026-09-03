@@ -22,7 +22,20 @@ function htmlIncludes() {
   }
 }
 
-const pages = ['index.html', 'en/index.html']
+const pages = [
+  'index.html',
+  'angebot/index.html',
+  'team/index.html',
+  'praxis/index.html',
+  'kontakt/index.html',
+  'notfall/index.html',
+  'en/index.html',
+  'en/services/index.html',
+  'en/team/index.html',
+  'en/practice/index.html',
+  'en/contact/index.html',
+  'en/emergency/index.html',
+]
 const input = Object.fromEntries(pages.map((page) => [page, resolve(projectRoot, page)]))
 
 export default defineConfig({

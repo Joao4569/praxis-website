@@ -10,7 +10,7 @@
     <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
     <title>Practice – Psychotherapy &amp; counselling</title>
   </head>
-  <body>
+  <body data-page="home" data-alternate-path="">
     <!-- @include src/partials/en/header.html -->
 
     <main id="main-content" tabindex="-1">
@@ -26,8 +26,10 @@
                 direction.
               </p>
               <div class="d-flex flex-column flex-sm-row gap-3">
-                <a class="btn btn-primary btn-lg" href="#team">Meet our team</a>
-                <a class="btn btn-outline-primary btn-lg" href="#contact">Get in touch</a>
+                <a class="btn btn-primary btn-lg" href="%BASE_URL%en/team/">Meet our team</a>
+                <a class="btn btn-outline-primary btn-lg" href="%BASE_URL%en/contact/"
+                  >Get in touch</a
+                >
               </div>
             </div>
             <div class="col-lg-5" aria-hidden="true">
@@ -41,117 +43,52 @@
         </div>
       </section>
 
-      <section id="services" class="section-space section-soft">
+      <section class="trust-strip" aria-label="Principles of our work">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Our services</p>
-            <h2>Support shaped around the person.</h2>
-            <p>The final service categories will be agreed with all four practitioners.</p>
-          </div>
-          <div class="row g-3 mt-4">
-            <div class="col-md-4">
-              <article class="service-card h-100">
-                <h3>Individual psychotherapy</h3>
-                <p>Individual support through mental distress, crises and personal change.</p>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="service-card h-100">
-                <h3>Couples therapy</h3>
-                <p>A protected setting for understanding, connection and new perspectives.</p>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="service-card h-100">
-                <h3>Trauma &amp; stabilisation</h3>
-                <p>Attentive, professionally grounded support at an appropriate pace.</p>
-              </article>
-            </div>
-          </div>
+          <ul class="trust-list">
+            <li><span aria-hidden="true">01</span> Personal</li>
+            <li><span aria-hidden="true">02</span> Evidence-based</li>
+            <li><span aria-hidden="true">03</span> Resource-oriented</li>
+            <li><span aria-hidden="true">04</span> Trauma-sensitive</li>
+          </ul>
         </div>
       </section>
 
-      <section id="team" class="section-space">
+      <section class="section-space" aria-labelledby="orientation-title-en">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Our team</p>
-            <h2>Four perspectives, one shared understanding.</h2>
-            <p>Individual profiles and portraits will be added in the next content phase.</p>
+          <div class="section-heading mb-5">
+            <p class="eyebrow">Explore at your own pace</p>
+            <h2 id="orientation-title-en">What would you like to know?</h2>
+            <p>
+              Every area has a clear page of its own, helping you find the information that matters
+              to your decision without a long search.
+            </p>
           </div>
-          <div class="row g-3 mt-4">
-            <div class="col-sm-6 col-xl-3">
-              <article class="team-card h-100">
-                <span>OS</span>
-                <h3>Olivia Sala</h3>
-                <p>Federally recognised psychotherapist</p>
-              </article>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <a class="path-card h-100" href="%BASE_URL%en/services/">
+                <span>01</span>
+                <h3>Services</h3>
+                <p>Forms of therapy, areas of support and reasons for seeking help.</p>
+                <strong>Learn more <span aria-hidden="true">→</span></strong>
+              </a>
             </div>
-            <div class="col-sm-6 col-xl-3">
-              <article class="team-card h-100">
-                <span>AI</span>
-                <h3>Alex Isler</h3>
-                <p>Federally recognised psychotherapist</p>
-              </article>
+            <div class="col-md-4">
+              <a class="path-card h-100" href="%BASE_URL%en/team/">
+                <span>02</span>
+                <h3>Our team</h3>
+                <p>The focus and way of working of all four practitioners.</p>
+                <strong>Meet the team <span aria-hidden="true">→</span></strong>
+              </a>
             </div>
-            <div class="col-sm-6 col-xl-3">
-              <article class="team-card h-100">
+            <div class="col-md-4">
+              <a class="path-card h-100" href="%BASE_URL%en/practice/">
                 <span>03</span>
-                <h3>New partner</h3>
-                <p>Profile to follow</p>
-              </article>
+                <h3>The practice</h3>
+                <p>Our shared approach, rooms, location and directions.</p>
+                <strong>View the practice <span aria-hidden="true">→</span></strong>
+              </a>
             </div>
-            <div class="col-sm-6 col-xl-3">
-              <article class="team-card h-100">
-                <span>04</span>
-                <h3>New partner</h3>
-                <p>Profile to follow</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="practice" class="section-space section-contrast">
-        <div class="container">
-          <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-              <p class="eyebrow">The practice</p>
-              <h2>Calm, discreet and easy to reach.</h2>
-            </div>
-            <div class="col-lg-6">
-              <p class="mb-0">
-                The address, directions, accessibility information and photos of the new rooms will
-                be added once the location and images are confirmed.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section-space">
-        <div class="container">
-          <div class="contact-panel">
-            <div>
-              <p class="eyebrow">Contact</p>
-              <h2>A first step can be simple.</h2>
-              <p class="mb-0">
-                Each practitioner will be directly contactable. Please do not send sensitive health
-                information through unsecured email.
-              </p>
-            </div>
-            <span class="contact-placeholder">Contact details to follow</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="emergency" class="emergency-section" aria-labelledby="emergency-title-en">
-        <div class="container py-4">
-          <div class="d-md-flex align-items-center justify-content-between gap-4">
-            <div>
-              <h2 id="emergency-title-en" class="h5 mb-1">Do you need immediate help?</h2>
-              <p class="mb-0">In an acute life-threatening situation in Switzerland, call 144.</p>
-            </div>
-            <span class="emergency-status mt-3 mt-md-0">Full emergency page to follow</span>
           </div>
         </div>
       </section>

@@ -25,22 +25,30 @@
 
       <div class="collapse navbar-collapse" id="primaryNavigationEn">
         <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="%BASE_URL%en/">Home</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="%BASE_URL%en/#services">Services</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="%BASE_URL%en/#team">Team</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="%BASE_URL%en/#practice">Practice</a>
+            <a class="nav-link" data-nav="home" href="%BASE_URL%en/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="%BASE_URL%en/#contact">Contact</a>
+            <a class="nav-link" data-nav="services" href="%BASE_URL%en/services/">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-nav="team" href="%BASE_URL%en/team/">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-nav="practice" href="%BASE_URL%en/practice/">Practice</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-nav="contact" href="%BASE_URL%en/contact/">Contact</a>
           </li>
           <li class="nav-item nav-item-language">
-            <a class="nav-link" href="%BASE_URL%" lang="de" hreflang="de-CH">DE</a>
+            <a class="nav-link" data-language-switch href="%BASE_URL%" lang="de" hreflang="de-CH"
+              >DE</a
+            >
           </li>
           <li class="nav-item ms-lg-2">
-            <a class="emergency-link" href="%BASE_URL%en/#emergency">Urgent help</a>
+            <a class="emergency-link" data-nav="emergency" href="%BASE_URL%en/emergency/"
+              >Urgent help</a
+            >
           </li>
         </ul>
       </div>

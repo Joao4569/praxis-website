@@ -10,7 +10,7 @@
     <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
     <title>Praxis – Psychotherapie &amp; Beratung</title>
   </head>
-  <body>
+  <body data-page="home" data-alternate-path="en/">
     <!-- @include src/partials/de/header.html -->
 
     <main id="main-content" tabindex="-1">
@@ -26,8 +26,10 @@
                 Weg zu neuer Orientierung.
               </p>
               <div class="d-flex flex-column flex-sm-row gap-3">
-                <a class="btn btn-primary btn-lg" href="#team">Unser Team kennenlernen</a>
-                <a class="btn btn-outline-primary btn-lg" href="#kontakt">Kontakt aufnehmen</a>
+                <a class="btn btn-primary btn-lg" href="%BASE_URL%team/">Unser Team kennenlernen</a>
+                <a class="btn btn-outline-primary btn-lg" href="%BASE_URL%kontakt/"
+                  >Kontakt aufnehmen</a
+                >
               </div>
             </div>
             <div class="col-lg-5" aria-hidden="true">
@@ -41,119 +43,52 @@
         </div>
       </section>
 
-      <section id="angebot" class="section-space section-soft">
+      <section class="trust-strip" aria-label="Grundsätze unserer Arbeit">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Unser Angebot</p>
-            <h2>Unterstützung, die zum Menschen passt.</h2>
-            <p>Die endgültige Einteilung wird gemeinsam mit allen vier Fachpersonen abgestimmt.</p>
-          </div>
-          <div class="row g-3 mt-4">
-            <div class="col-md-4">
-              <article class="service-card h-100">
-                <h3>Einzelpsychotherapie</h3>
-                <p>Individuelle Begleitung bei psychischen Belastungen, Krisen und Veränderung.</p>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="service-card h-100">
-                <h3>Paartherapie</h3>
-                <p>Ein geschützter Rahmen für Verständigung, Beziehung und neue Perspektiven.</p>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="service-card h-100">
-                <h3>Trauma &amp; Stabilisierung</h3>
-                <p>Achtsame, fachlich fundierte Unterstützung mit einem angemessenen Tempo.</p>
-              </article>
-            </div>
-          </div>
+          <ul class="trust-list">
+            <li><span aria-hidden="true">01</span> Persönlich</li>
+            <li><span aria-hidden="true">02</span> Wissenschaftlich fundiert</li>
+            <li><span aria-hidden="true">03</span> Ressourcenorientiert</li>
+            <li><span aria-hidden="true">04</span> Traumasensibel</li>
+          </ul>
         </div>
       </section>
 
-      <section id="team" class="section-space">
+      <section class="section-space" aria-labelledby="orientation-title-de">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Unser Team</p>
-            <h2>Vier Perspektiven, ein gemeinsames Verständnis.</h2>
+          <div class="section-heading mb-5">
+            <p class="eyebrow">In Ruhe orientieren</p>
+            <h2 id="orientation-title-de">Was möchten Sie kennenlernen?</h2>
             <p>
-              Die individuellen Profile und Porträts werden im nächsten Inhaltsabschnitt ergänzt.
+              Jeder Bereich hat eine eigene, übersichtliche Seite. So finden Sie die Informationen,
+              die für Ihre Entscheidung wichtig sind, ohne lange suchen zu müssen.
             </p>
           </div>
-          <div class="row g-3 mt-4">
-            <div class="col-sm-6 col-xl-3">
-              <article class="team-card h-100">
-                <span>OS</span>
-                <h3>Olivia Sala</h3>
-                <p>Eidg. anerkannte Psychotherapeutin</p>
-              </article>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <a class="path-card h-100" href="%BASE_URL%angebot/">
+                <span>01</span>
+                <h3>Angebot</h3>
+                <p>Therapieformen, Themen und mögliche Anlässe.</p>
+                <strong>Mehr erfahren <span aria-hidden="true">→</span></strong>
+              </a>
             </div>
-            <div class="col-sm-6 col-xl-3">
-              <article class="team-card h-100">
-                <span>AI</span>
-                <h3>Alex Isler</h3>
-                <p>Eidg. anerkannter Psychotherapeut</p>
-              </article>
+            <div class="col-md-4">
+              <a class="path-card h-100" href="%BASE_URL%team/">
+                <span>02</span>
+                <h3>Unser Team</h3>
+                <p>Schwerpunkte und Arbeitsweise der vier Fachpersonen.</p>
+                <strong>Team kennenlernen <span aria-hidden="true">→</span></strong>
+              </a>
             </div>
-            <div class="col-sm-6 col-xl-3">
-              <article class="team-card h-100">
+            <div class="col-md-4">
+              <a class="path-card h-100" href="%BASE_URL%praxis/">
                 <span>03</span>
-                <h3>Neue Partnerperson</h3>
-                <p>Profil folgt</p>
-              </article>
+                <h3>Die Praxis</h3>
+                <p>Haltung, Räume, Standort und Anreise.</p>
+                <strong>Praxis ansehen <span aria-hidden="true">→</span></strong>
+              </a>
             </div>
-            <div class="col-sm-6 col-xl-3">
-              <article class="team-card h-100">
-                <span>04</span>
-                <h3>Neue Partnerperson</h3>
-                <p>Profil folgt</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="praxis" class="section-space section-contrast">
-        <div class="container">
-          <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-              <p class="eyebrow">Die Praxis</p>
-              <h2>Ruhig, diskret und gut erreichbar.</h2>
-            </div>
-            <div class="col-lg-6">
-              <p class="mb-0">
-                Adresse, Anreise, Barrierefreiheit und Bilder der neuen Räume werden ergänzt, sobald
-                der Standort und das Bildmaterial bestätigt sind.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="kontakt" class="section-space">
-        <div class="container">
-          <div class="contact-panel">
-            <div>
-              <p class="eyebrow">Kontakt</p>
-              <h2>Ein erster Schritt darf einfach sein.</h2>
-              <p class="mb-0">
-                Jede Fachperson wird direkt erreichbar sein. Bitte senden Sie keine sensiblen
-                Gesundheitsdaten über ungeschützte E-Mail.
-              </p>
-            </div>
-            <span class="contact-placeholder">Kontaktdaten folgen</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="notfall" class="emergency-section" aria-labelledby="emergency-title-de">
-        <div class="container py-4">
-          <div class="d-md-flex align-items-center justify-content-between gap-4">
-            <div>
-              <h2 id="emergency-title-de" class="h5 mb-1">Benötigen Sie sofort Hilfe?</h2>
-              <p class="mb-0">Rufen Sie in einer akuten lebensbedrohlichen Situation die 144 an.</p>
-            </div>
-            <span class="emergency-status mt-3 mt-md-0">Vollständige Notfallseite folgt</span>
           </div>
         </div>
       </section>
