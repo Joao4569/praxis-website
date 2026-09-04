@@ -17,7 +17,24 @@ function htmlIncludes() {
     name: 'praxis-html-includes',
     transformIndexHtml: {
       order: 'pre',
-      handler: renderIncludes,
+      handler(html) {
+        const renderedHtml = renderIncludes(html)
+
+        if (process.env.DEPLOYMENT_STAGE !== 'preview') {
+          return renderedHtml
+        }
+
+        return {
+          html: renderedHtml,
+          tags: [
+            {
+              tag: 'meta',
+              attrs: { name: 'robots', content: 'noindex, nofollow' },
+              injectTo: 'head',
+            },
+          ],
+        }
+      },
     },
   }
 }
