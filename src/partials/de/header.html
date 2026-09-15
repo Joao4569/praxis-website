@@ -5,10 +5,13 @@
     <div class="container">
       <a class="navbar-brand" href="%BASE_URL%" aria-label="Praxis – Startseite">
         <span class="brand-mark" aria-hidden="true">P</span>
-        <span>
+        <span class="brand-current">
           <strong class="d-block">Praxis</strong>
           <small>Psychotherapie &amp; Beratung</small>
         </span>
+        <strong class="brand-legacy" aria-hidden="true"
+          >Praxis<br />Psychotherapie<br />Beratung</strong
+        >
       </a>
 
       <button
@@ -54,28 +57,46 @@
       </div>
     </div>
   </nav>
-  <div class="palette-preview" aria-label="Farbpalette für die Vorschau auswählen">
-    <div class="container">
-      <span class="palette-preview-label">Farbvarianten</span>
-      <div class="palette-options" role="group" aria-label="Farbpalette">
-        <button class="palette-option" type="button" data-palette-option="1" aria-pressed="true">
-          <span class="palette-swatches palette-swatches-one" aria-hidden="true"
-            ><i></i><i></i><i></i
-          ></span>
-          <span>1 · Wald &amp; Ton</span>
-        </button>
-        <button class="palette-option" type="button" data-palette-option="2" aria-pressed="false">
-          <span class="palette-swatches palette-swatches-two" aria-hidden="true"
-            ><i></i><i></i><i></i
-          ></span>
-          <span>2 · Nebelblau &amp; Sand</span>
-        </button>
-        <button class="palette-option" type="button" data-palette-option="3" aria-pressed="false">
-          <span class="palette-swatches palette-swatches-three" aria-hidden="true"
-            ><i></i><i></i><i></i
-          ></span>
-          <span>3 · Pflaume &amp; Rosé</span>
-        </button>
+  <div class="preview-toolbar" aria-label="Darstellung für die Vorschau auswählen">
+    <div class="container preview-controls">
+      <div class="preview-control">
+        <span class="preview-label">Design</span>
+        <div class="preview-options design-options" role="group" aria-label="Designvariante">
+          <button class="preview-option" type="button" data-design-option="new" aria-pressed="true">
+            Neues Design
+          </button>
+          <button
+            class="preview-option"
+            type="button"
+            data-design-option="legacy"
+            aria-pressed="false"
+          >
+            Bisherige Website
+          </button>
+        </div>
+      </div>
+      <div class="preview-control preview-control-palette">
+        <span class="preview-label">Farbvarianten</span>
+        <div class="preview-options palette-options" role="group" aria-label="Farbpalette">
+          <button class="preview-option" type="button" data-palette-option="1" aria-pressed="true">
+            <span class="palette-swatches palette-swatches-one" aria-hidden="true"
+              ><i></i><i></i><i></i
+            ></span>
+            <span>1 · Wald &amp; Ton</span>
+          </button>
+          <button class="preview-option" type="button" data-palette-option="2" aria-pressed="false">
+            <span class="palette-swatches palette-swatches-two" aria-hidden="true"
+              ><i></i><i></i><i></i
+            ></span>
+            <span>2 · Nebelblau &amp; Sand</span>
+          </button>
+          <button class="preview-option" type="button" data-palette-option="3" aria-pressed="false">
+            <span class="palette-swatches palette-swatches-three" aria-hidden="true"
+              ><i></i><i></i><i></i
+            ></span>
+            <span>3 · Pflaume &amp; Rosé</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>

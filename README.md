@@ -65,11 +65,13 @@ The normal feedback cycle is:
 When the real domain is connected, the deployment base path and preview-only search directive must
 be changed for production.
 
-## Temporary palette comparison
+## Temporary design and palette comparison
 
-The feedback build includes a temporary colour switcher below the main navigation. Palette 1 is the
-original “Forest & clay” direction; palettes 2 and 3 are “Mist blue & sand” and “Plum & rose”. The
-selection is stored in the browser while navigating between pages.
+The feedback build includes temporary design and colour controls below the main navigation. The
+design control compares the new direction with an adaptation of the current Praxis Wipkingen
+layout. Palette 1 is the original “Forest & clay” direction; palettes 2 and 3 are “Mist blue & sand”
+and “Plum & rose”. Both selections are stored in the browser while navigating between pages.
 
-Add `?palette=2` or `?palette=3` to any page URL to share a specific option directly. This control
-and its storage code should be removed after the owners choose the final palette.
+Add `?design=legacy`, `?palette=2`, or both (for example,
+`?design=legacy&palette=2`) to any page URL to share a specific combination directly. These
+controls and their storage code should be removed after the owners choose the final direction.

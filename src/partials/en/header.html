@@ -5,10 +5,13 @@
     <div class="container">
       <a class="navbar-brand" href="%BASE_URL%en/" aria-label="Practice – Home">
         <span class="brand-mark" aria-hidden="true">P</span>
-        <span>
+        <span class="brand-current">
           <strong class="d-block">Practice</strong>
           <small>Psychotherapy &amp; counselling</small>
         </span>
+        <strong class="brand-legacy" aria-hidden="true"
+          >Practice<br />Psychotherapy<br />Counselling</strong
+        >
       </a>
 
       <button
@@ -54,28 +57,46 @@
       </div>
     </div>
   </nav>
-  <div class="palette-preview" aria-label="Choose a colour palette for this preview">
-    <div class="container">
-      <span class="palette-preview-label">Colour options</span>
-      <div class="palette-options" role="group" aria-label="Colour palette">
-        <button class="palette-option" type="button" data-palette-option="1" aria-pressed="true">
-          <span class="palette-swatches palette-swatches-one" aria-hidden="true"
-            ><i></i><i></i><i></i
-          ></span>
-          <span>1 · Forest &amp; clay</span>
-        </button>
-        <button class="palette-option" type="button" data-palette-option="2" aria-pressed="false">
-          <span class="palette-swatches palette-swatches-two" aria-hidden="true"
-            ><i></i><i></i><i></i
-          ></span>
-          <span>2 · Mist blue &amp; sand</span>
-        </button>
-        <button class="palette-option" type="button" data-palette-option="3" aria-pressed="false">
-          <span class="palette-swatches palette-swatches-three" aria-hidden="true"
-            ><i></i><i></i><i></i
-          ></span>
-          <span>3 · Plum &amp; rose</span>
-        </button>
+  <div class="preview-toolbar" aria-label="Choose the presentation for this preview">
+    <div class="container preview-controls">
+      <div class="preview-control">
+        <span class="preview-label">Design</span>
+        <div class="preview-options design-options" role="group" aria-label="Design option">
+          <button class="preview-option" type="button" data-design-option="new" aria-pressed="true">
+            New design
+          </button>
+          <button
+            class="preview-option"
+            type="button"
+            data-design-option="legacy"
+            aria-pressed="false"
+          >
+            Current website
+          </button>
+        </div>
+      </div>
+      <div class="preview-control preview-control-palette">
+        <span class="preview-label">Colour options</span>
+        <div class="preview-options palette-options" role="group" aria-label="Colour palette">
+          <button class="preview-option" type="button" data-palette-option="1" aria-pressed="true">
+            <span class="palette-swatches palette-swatches-one" aria-hidden="true"
+              ><i></i><i></i><i></i
+            ></span>
+            <span>1 · Forest &amp; clay</span>
+          </button>
+          <button class="preview-option" type="button" data-palette-option="2" aria-pressed="false">
+            <span class="palette-swatches palette-swatches-two" aria-hidden="true"
+              ><i></i><i></i><i></i
+            ></span>
+            <span>2 · Mist blue &amp; sand</span>
+          </button>
+          <button class="preview-option" type="button" data-palette-option="3" aria-pressed="false">
+            <span class="palette-swatches palette-swatches-three" aria-hidden="true"
+              ><i></i><i></i><i></i
+            ></span>
+            <span>3 · Plum &amp; rose</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>

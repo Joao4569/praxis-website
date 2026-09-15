@@ -16,6 +16,59 @@ if (alternatePath !== undefined && languageSwitch) {
   languageSwitch.href = `${import.meta.env.BASE_URL}${alternatePath}`
 }
 
+const designOptions = [...document.querySelectorAll('[data-design-option]')]
+const supportedDesigns = new Set(['new', 'legacy'])
+const designStorageKey = 'praxis-preview-design'
+
+const getStoredDesign = () => {
+  try {
+    return localStorage.getItem(designStorageKey)
+  } catch {
+    return null
+  }
+}
+
+const storeDesign = (design) => {
+  try {
+    localStorage.setItem(designStorageKey, design)
+  } catch {
+    // The comparison still works when storage is disabled.
+  }
+}
+
+const updateDesignUrl = (design) => {
+  const url = new URL(window.location.href)
+
+  if (design === 'new') {
+    url.searchParams.delete('design')
+  } else {
+    url.searchParams.set('design', design)
+  }
+
+  history.replaceState({}, '', url)
+}
+
+const applyDesign = (design, { persist = true, updateUrl = true } = {}) => {
+  const selectedDesign = supportedDesigns.has(design) ? design : 'new'
+  document.documentElement.dataset.design = selectedDesign
+
+  designOptions.forEach((option) => {
+    option.setAttribute('aria-pressed', String(option.dataset.designOption === selectedDesign))
+  })
+
+  if (persist) storeDesign(selectedDesign)
+  if (updateUrl) updateDesignUrl(selectedDesign)
+}
+
+const requestedDesign = new URLSearchParams(window.location.search).get('design')
+const initialDesign = supportedDesigns.has(requestedDesign) ? requestedDesign : getStoredDesign()
+
+applyDesign(initialDesign, { persist: false, updateUrl: false })
+
+designOptions.forEach((option) => {
+  option.addEventListener('click', () => applyDesign(option.dataset.designOption))
+})
+
 const paletteOptions = [...document.querySelectorAll('[data-palette-option]')]
 const supportedPalettes = new Set(['1', '2', '3'])
 const paletteStorageKey = 'praxis-preview-palette'
