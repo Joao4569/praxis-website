@@ -64,3 +64,12 @@ The normal feedback cycle is:
 
 When the real domain is connected, the deployment base path and preview-only search directive must
 be changed for production.
+
+## Temporary palette comparison
+
+The feedback build includes a temporary colour switcher below the main navigation. Palette 1 is the
+original “Forest & clay” direction; palettes 2 and 3 are “Mist blue & sand” and “Plum & rose”. The
+selection is stored in the browser while navigating between pages.
+
+Add `?palette=2` or `?palette=3` to any page URL to share a specific option directly. This control
+and its storage code should be removed after the owners choose the final palette.

@@ -15,3 +15,65 @@ const languageSwitch = document.querySelector('[data-language-switch]')
 if (alternatePath !== undefined && languageSwitch) {
   languageSwitch.href = `${import.meta.env.BASE_URL}${alternatePath}`
 }
+
+const paletteOptions = [...document.querySelectorAll('[data-palette-option]')]
+const supportedPalettes = new Set(['1', '2', '3'])
+const paletteStorageKey = 'praxis-preview-palette'
+
+const getStoredPalette = () => {
+  try {
+    return localStorage.getItem(paletteStorageKey)
+  } catch {
+    return null
+  }
+}
+
+const storePalette = (palette) => {
+  try {
+    localStorage.setItem(paletteStorageKey, palette)
+  } catch {
+    // The comparison still works when storage is disabled.
+  }
+}
+
+const updatePaletteUrl = (palette) => {
+  const url = new URL(window.location.href)
+
+  if (palette === '1') {
+    url.searchParams.delete('palette')
+  } else {
+    url.searchParams.set('palette', palette)
+  }
+
+  history.replaceState({}, '', url)
+}
+
+const applyPalette = (palette, { persist = true, updateUrl = true } = {}) => {
+  const selectedPalette = supportedPalettes.has(palette) ? palette : '1'
+  document.documentElement.dataset.palette = selectedPalette
+
+  paletteOptions.forEach((option) => {
+    option.setAttribute('aria-pressed', String(option.dataset.paletteOption === selectedPalette))
+  })
+
+  const selectedOption = paletteOptions.find(
+    (option) => option.dataset.paletteOption === selectedPalette,
+  )
+  requestAnimationFrame(() => {
+    selectedOption?.scrollIntoView({ behavior: 'auto', block: 'nearest', inline: 'nearest' })
+  })
+
+  if (persist) storePalette(selectedPalette)
+  if (updateUrl) updatePaletteUrl(selectedPalette)
+}
+
+const requestedPalette = new URLSearchParams(window.location.search).get('palette')
+const initialPalette = supportedPalettes.has(requestedPalette)
+  ? requestedPalette
+  : getStoredPalette()
+
+applyPalette(initialPalette, { persist: false, updateUrl: false })
+
+paletteOptions.forEach((option) => {
+  option.addEventListener('click', () => applyPalette(option.dataset.paletteOption))
+})
