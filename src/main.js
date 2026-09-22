@@ -70,7 +70,7 @@ designOptions.forEach((option) => {
 })
 
 const paletteOptions = [...document.querySelectorAll('[data-palette-option]')]
-const supportedPalettes = new Set(['1', '2', '3'])
+const supportedPalettes = new Set(['1', '2', '3', '4', '5', '6'])
 const paletteStorageKey = 'praxis-preview-palette'
 
 const getStoredPalette = () => {
