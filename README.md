@@ -1,7 +1,6 @@
-# Praxis Website
+# Psychotherapie Josefstrasse Website
 
-Bilingual static website for a psychotherapy practice. The working project name is temporary;
-the final practice name can be changed centrally once it has been chosen.
+Bilingual static website for Psychotherapie Josefstrasse.
 
 ## Technology
 
@@ -69,10 +68,9 @@ be changed for production.
 
 The feedback build includes temporary design and colour controls below the main navigation. The
 design control compares the new direction with an adaptation of the current Praxis Wipkingen
-layout. Palettes 1–3 are “Forest & clay”, “Mist blue & sand”, and “Plum & rose”. Palettes 4–6 are
-their brown-free counterparts: “Forest & lilac”, “Mist blue & eucalyptus”, and “Plum & sky”. Both
-selections are stored in the browser while navigating between pages.
+layout. The three warm palette directions are “Aubergine & apricot”, “Sienna & sand”, and “Plum &
+rose”. Both selections are stored in the browser while navigating between pages.
 
-Add `?design=legacy`, `?palette=5`, or both (for example,
-`?design=legacy&palette=5`) to any page URL to share a specific combination directly. These
+Add `?design=legacy`, `?palette=2`, or both (for example,
+`?design=legacy&palette=2`) to any page URL to share a specific combination directly. These
 controls and their storage code should be removed after the owners choose the final direction.

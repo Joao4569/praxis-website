@@ -1,8 +1,7 @@
 # Bilingual content plan
 
-The practice name is intentionally represented as “Praxis” / “Practice” until the final brand is
-chosen. German (`de-CH`) is the primary language, and every public content page will have an
-English equivalent.
+The practice name is “Psychotherapie Josefstrasse”. German (`de-CH`) is the primary language, and
+every public content page will have an English equivalent.
 
 ## Page map
 
