@@ -44,14 +44,9 @@ const pages = [
   'angebot/index.html',
   'team/index.html',
   'praxis/index.html',
+  'anfahrt/index.html',
   'kontakt/index.html',
   'notfall/index.html',
-  'en/index.html',
-  'en/services/index.html',
-  'en/team/index.html',
-  'en/practice/index.html',
-  'en/contact/index.html',
-  'en/emergency/index.html',
 ]
 const input = Object.fromEntries(pages.map((page) => [page, resolve(projectRoot, page)]))
 

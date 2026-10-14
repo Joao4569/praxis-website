@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="de-CH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anfahrtsplan zur Psychotherapie Josefstrasse mit Zugängen, Praxisparkplätzen und Praxiseingang."
+    />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+    <title>Anfahrt · Psychotherapie Josefstrasse</title>
+  </head>
+  <body data-page="directions">
+    <!-- @include src/partials/de/header.html -->
+    <main id="main-content" tabindex="-1">
+      <header class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Anfahrt</p>
+          <h1>Gut ankommen in der Josefstrasse.</h1>
+          <p>
+            Die Praxis liegt im Innenhof an der Josefstrasse 180A. Der Plan zeigt die beiden
+            Zugänge, die beiden Praxisparkplätze und den Eingang an der linken Gebäudeseite.
+          </p>
+        </div>
+      </header>
+
+      <section class="section-space" aria-labelledby="arrival-plan-title">
+        <div class="container">
+          <div class="arrival-layout">
+            <figure class="arrival-plan-card">
+              <img
+                src="%BASE_URL%anfahrt-plan.svg"
+                width="1000"
+                height="1000"
+                alt="Schematischer Plan: Albertstrasse oben, Josefstrasse unten und Ottostrasse links. Zwei genau gegenüberliegende Tunnel führen unter den Gebäudezeilen in den Innenhof. Das freistehende Praxisgebäude 180A liegt links im Innenhof. Zwei waagrechte Parkplätze befinden sich direkt rechts daneben; der Praxiseingang liegt an der linken Gebäudeseite."
+              />
+              <figcaption>Schematische Darstellung, nicht massstabsgetreu.</figcaption>
+            </figure>
+
+            <aside class="arrival-details" aria-labelledby="arrival-plan-title">
+              <p class="eyebrow">Auf einen Blick</p>
+              <h2 id="arrival-plan-title">Josefstrasse 180A</h2>
+              <p>
+                Der Eingang der Psychotherapie Josefstrasse befindet sich im Innenhof. Sie können
+                den Innenhof mit dem Auto oder zu Fuss durch zwei gegenüberliegende Tunnel von der
+                Albertstrasse oder der Josefstrasse aus erreichen.
+              </p>
+              <ul class="arrival-key">
+                <li>
+                  <span class="arrival-key-symbol arrival-key-access" aria-hidden="true">→</span>
+                  <span><strong>Zugänge:</strong> gegenüberliegende Tunnel unter den Gebäuden</span>
+                </li>
+                <li>
+                  <span class="arrival-key-symbol arrival-key-parking" aria-hidden="true">P</span>
+                  <span><strong>Parkieren:</strong> P1 und P2 direkt rechts neben der Praxis</span>
+                </li>
+                <li>
+                  <span class="arrival-key-symbol arrival-key-entrance" aria-hidden="true">●</span>
+                  <span><strong>Praxiseingang:</strong> an der linken Seite des Gebäudes 180A</span>
+                </li>
+              </ul>
+              <a
+                class="btn btn-outline-primary"
+                href="%BASE_URL%anfahrt-plan.svg"
+                target="_blank"
+                rel="noopener"
+              >
+                Plan gross öffnen
+                <span class="visually-hidden"> (öffnet in einem neuen Tab)</span>
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- @include src/partials/de/footer.html -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

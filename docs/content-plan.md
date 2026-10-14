@@ -1,22 +1,22 @@
-# Bilingual content plan
+# German content plan
 
-The practice name is “Psychotherapie Josefstrasse”. German (`de-CH`) is the primary language, and
-every public content page will have an English equivalent.
+The practice name is “Psychotherapie Josefstrasse”. German (`de-CH`) is the website language.
 
 ## Page map
 
-| German route         | English route           | Purpose                                   |
-| -------------------- | ----------------------- | ----------------------------------------- |
-| `/`                  | `/en/`                  | Homepage and calm first orientation       |
-| `/angebot/`          | `/en/services/`         | Therapy and counselling overview          |
-| `/team/`             | `/en/team/`             | All four therapists at a glance           |
-| `/team/olivia-sala/` | `/en/team/olivia-sala/` | Olivia's profile                          |
-| `/team/alex-isler/`  | `/en/team/alex-isler/`  | Alex's profile                            |
-| `/praxis/`           | `/en/practice/`         | Rooms, approach, access, and location     |
-| `/kontakt/`          | `/en/contact/`          | Direct, privacy-conscious contact paths   |
-| `/notfall/`          | `/en/emergency/`        | Clearly separated urgent-help information |
-| `/impressum/`        | `/en/legal-notice/`     | Legal provider information                |
-| `/datenschutz/`      | `/en/privacy/`          | Privacy information                       |
+| Route                | Purpose                                    |
+| -------------------- | ------------------------------------------ |
+| `/`                  | Homepage and calm first orientation        |
+| `/angebot/`          | Therapy and counselling overview           |
+| `/team/`             | All four therapists at a glance            |
+| `/team/olivia-sala/` | Olivia's profile                           |
+| `/team/alex-isler/`  | Alex's profile                             |
+| `/praxis/`           | Rooms, approach, access, and location      |
+| `/anfahrt/`          | Diagram with access, parking, and entrance |
+| `/kontakt/`          | Direct, privacy-conscious contact paths    |
+| `/notfall/`          | Clearly separated urgent-help information  |
+| `/impressum/`        | Legal provider information                 |
+| `/datenschutz/`      | Privacy information                        |
 
 Routes for the other two therapists will be added when their names are confirmed.
 
@@ -32,7 +32,7 @@ Routes for the other two therapists will be added when their names are confirmed
 - Billing and insurance information
 - Direct telephone and secure email contact
 - Education, clinical experience, and professional memberships
-- Corresponding German and English copy review status
+- German copy review status
 
 ## Privacy and safety rules
 

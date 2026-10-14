@@ -1,6 +1,6 @@
 # Psychotherapie Josefstrasse Website
 
-Bilingual static website for Psychotherapie Josefstrasse.
+German-language static website for Psychotherapie Josefstrasse.
 
 ## Technology
 
@@ -51,7 +51,7 @@ other sensitive data. Preview builds include a `noindex, nofollow` directive for
 This discourages indexing but does not make the site private.
 
 The deployment workflow is stored in `.github/workflows/deploy-pages.yml`. Its repository-aware
-base path ensures that styles, scripts, pages, and language links work under `/praxis-website/`.
+base path ensures that styles, scripts, and page links work under `/praxis-website/`.
 
 The normal feedback cycle is:
 

@@ -10,7 +10,7 @@
     <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
     <title>Psychotherapie Josefstrasse – Psychotherapie &amp; Beratung</title>
   </head>
-  <body data-page="home" data-alternate-path="en/">
+  <body data-page="home">
     <!-- @include src/partials/de/header.html -->
 
     <main id="main-content" tabindex="-1">
@@ -96,15 +96,17 @@
       <section class="legacy-home-location" aria-labelledby="legacy-location-title-de">
         <div class="container">
           <h2 id="legacy-location-title-de">Praxis Standort</h2>
-          <p>Die neue Adresse wird ergänzt.</p>
+          <p>Josefstrasse 180A</p>
         </div>
-        <div
-          class="legacy-map-placeholder"
-          role="img"
-          aria-label="Platzhalter für die Standortkarte"
-        >
-          <span>Kartenplatzhalter</span>
-        </div>
+        <a class="legacy-map-preview" href="%BASE_URL%anfahrt/">
+          <img
+            src="%BASE_URL%anfahrt-plan.svg"
+            width="1000"
+            height="1000"
+            alt="Vorschau des schematischen Anfahrtsplans zur Josefstrasse 180A"
+          />
+          <span>Anfahrtsplan öffnen <span aria-hidden="true">→</span></span>
+        </a>
       </section>
     </main>
 

@@ -2,7 +2,7 @@
   "name": "praxis-website",
   "version": "0.0.0",
   "private": true,
-  "description": "Bilingual static website for a psychotherapy practice.",
+  "description": "German-language static website for Psychotherapie Josefstrasse.",
   "type": "module",
   "engines": {
     "node": ">=24.0.0 <25"

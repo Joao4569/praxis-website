@@ -9,13 +9,6 @@ if (activeNavigationLink) {
   activeNavigationLink.setAttribute('aria-current', 'page')
 }
 
-const alternatePath = document.body.dataset.alternatePath
-const languageSwitch = document.querySelector('[data-language-switch]')
-
-if (alternatePath !== undefined && languageSwitch) {
-  languageSwitch.href = `${import.meta.env.BASE_URL}${alternatePath}`
-}
-
 const designOptions = [...document.querySelectorAll('[data-design-option]')]
 const supportedDesigns = new Set(['new', 'legacy'])
 const designStorageKey = 'praxis-preview-design'

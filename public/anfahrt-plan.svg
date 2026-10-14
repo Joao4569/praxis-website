@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="plan-title plan-description">
+  <title id="plan-title">Schematischer Anfahrtsplan zur Psychotherapie Josefstrasse</title>
+  <desc id="plan-description">
+    Quadratischer Übersichtsplan mit Albertstrasse oben, Josefstrasse unten und Ottostrasse links. Zwei genau gegenüberliegende Tunnel führen unter den Gebäudezeilen in den Innenhof. Die Praxis ist ein freistehendes Gebäude im linken Teil des Innenhofs. Zwei waagrechte Praxisparkplätze liegen direkt rechts daneben; der Praxiseingang befindet sich an der linken Gebäudeseite.
+  </desc>
+
+  <defs>
+    <marker id="route-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="18" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9a4f32" />
+    </marker>
+    <marker id="entry-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="16" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6a4963" />
+    </marker>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#302d34" flood-opacity="0.14" />
+    </filter>
+    <style>
+      .street-name { fill: #38333a; font: 700 31px Arial, sans-serif; letter-spacing: .04em; }
+      .street-name-main { font-size: 37px; }
+      .building { fill: #decfc5; stroke: #9f888d; stroke-width: 3; }
+      .building-line { stroke: #baa4a6; stroke-width: 3; }
+      .tunnel { fill: #c2b2ac; stroke: #75666a; stroke-width: 3; stroke-dasharray: 8 6; }
+      .small-label { fill: #504950; font: 600 21px Arial, sans-serif; }
+      .annotation { fill: #342f36; font: 700 22px Arial, sans-serif; }
+      .annotation-light { fill: #fffaf6; font: 700 21px Arial, sans-serif; }
+      .annotation-subtle { fill: #f8e8dc; font: 600 15px Arial, sans-serif; }
+      .entry-label { fill: #fffaf6; font: 700 18px Arial, sans-serif; }
+      .number { fill: #342f36; font: 800 24px Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#f7f1eb" />
+
+  <!-- Three surrounding streets -->
+  <rect x="0" y="66" width="1000" height="168" fill="#d9d7d7" />
+  <rect x="0" y="796" width="1000" height="162" fill="#d9d7d7" />
+  <rect x="30" y="0" width="138" height="1000" fill="#d9d7d7" />
+  <rect x="168" y="214" width="832" height="20" fill="#eee5dd" />
+  <rect x="168" y="796" width="832" height="20" fill="#eee5dd" />
+  <rect x="148" y="234" width="20" height="562" fill="#eee5dd" />
+
+  <path d="M190 150 H940 M190 875 H940 M99 260 V755" stroke="#f7f1eb" stroke-width="5" stroke-dasharray="32 24" opacity="0.92" />
+
+  <text class="street-name" x="550" y="132" text-anchor="middle">ALBERTSTRASSE</text>
+  <text class="street-name street-name-main" x="550" y="914" text-anchor="middle">JOSEFSTRASSE</text>
+  <text class="street-name" x="99" y="510" text-anchor="middle" transform="rotate(-90 99 510)">OTTOSTRASSE</text>
+
+  <!-- Rows of buildings around the block -->
+  <g aria-label="Gebäudezeilen um den Innenhof">
+    <rect class="building" x="178" y="244" width="792" height="105" rx="3" />
+    <path class="building-line" d="M267 244 V349 M356 244 V349 M445 244 V349 M540 244 V349 M795 244 V349 M884 244 V349" />
+
+    <rect class="building" x="178" y="694" width="792" height="92" rx="3" />
+    <path class="building-line" d="M256 694 V786 M340 694 V786 M440 694 V786 M545 694 V786 M795 694 V786 M890 694 V786" />
+
+    <rect class="building" x="178" y="359" width="112" height="91" rx="3" />
+    <rect class="building" x="178" y="526" width="112" height="158" rx="3" />
+    <path class="building-line" d="M178 604 H290" />
+
+    <rect class="building" x="850" y="359" width="120" height="325" rx="3" />
+    <path class="building-line" d="M850 440 H970 M850 521 H970 M850 603 H970" />
+  </g>
+
+  <!-- Courtyard -->
+  <rect x="302" y="361" width="536" height="321" rx="12" fill="#eee3da" stroke="#c7b5ad" stroke-width="3" />
+  <path d="M302 652 H838 M666 361 V682" stroke="#d6c6be" stroke-width="3" stroke-dasharray="11 13" />
+  <text class="small-label" x="755" y="660" text-anchor="middle">INNENHOF</text>
+
+  <!-- Separate practice building on the left side of the courtyard -->
+  <g aria-label="Praxisgebäude Josefstrasse 180A" filter="url(#soft-shadow)">
+    <rect x="335" y="392" width="176" height="218" rx="6" fill="#cab0c3" stroke="#6a4963" stroke-width="5" />
+    <path d="M335 463 H511 M335 538 H511" stroke="#b090aa" stroke-width="3" />
+    <text class="annotation" x="423" y="485" text-anchor="middle">PRAXIS</text>
+    <text class="small-label" x="423" y="520" text-anchor="middle">180A</text>
+  </g>
+
+  <!-- Second freestanding courtyard building -->
+  <g aria-label="Weiteres Gebäude im Innenhof">
+    <rect class="building" x="686" y="389" width="136" height="236" rx="5" />
+    <path class="building-line" d="M686 468 H822 M686 546 H822" />
+  </g>
+
+  <!-- Two horizontal parking bays immediately to the right of the practice -->
+  <g aria-label="Zwei waagrechte Praxisparkplätze">
+    <rect x="520" y="421" width="135" height="72" rx="6" fill="#dfb184" stroke="#9a4f32" stroke-width="4" />
+    <rect x="520" y="501" width="135" height="72" rx="6" fill="#dfb184" stroke="#9a4f32" stroke-width="4" />
+    <text class="number" x="588" y="466" text-anchor="middle">P1</text>
+    <text class="number" x="588" y="546" text-anchor="middle">P2</text>
+    <path d="M625 442 V472 M625 522 V552" stroke="#704631" stroke-width="5" stroke-linecap="round" />
+  </g>
+  <rect x="520" y="596" width="128" height="45" rx="22" fill="#fffaf6" stroke="#c69a6b" stroke-width="4" />
+  <text class="small-label" x="584" y="625" text-anchor="middle">P1 + P2</text>
+
+  <!-- Main entrance on the left facade of the practice -->
+  <rect x="327" y="470" width="12" height="52" rx="3" fill="#6a4963" />
+  <circle cx="335" cy="496" r="12" fill="#fffaf6" stroke="#6a4963" stroke-width="6" />
+  <path d="M303 496 H326" fill="none" stroke="#6a4963" stroke-width="8" stroke-linecap="round" marker-end="url(#entry-arrow)" />
+  <g filter="url(#soft-shadow)">
+    <rect x="169" y="458" width="150" height="58" rx="28" fill="#6a4963" />
+    <text class="entry-label" x="244" y="493" text-anchor="middle">Praxiseingang</text>
+  </g>
+
+  <!-- Opposing tunnel access under the northern building row -->
+  <rect class="tunnel" x="640" y="234" width="60" height="127" rx="4" />
+  <path d="M670 151 V632" fill="none" stroke="#9a4f32" stroke-width="12" stroke-linecap="round" marker-end="url(#route-arrow)" />
+  <circle cx="670" cy="204" r="21" fill="#fffaf6" stroke="#9a4f32" stroke-width="7" />
+  <path d="M659 204 H681 M670 193 V215" stroke="#9a4f32" stroke-width="5" stroke-linecap="round" />
+  <g filter="url(#soft-shadow)">
+    <rect x="710" y="152" width="230" height="68" rx="32" fill="#9a4f32" />
+    <text class="annotation-light" x="825" y="181" text-anchor="middle">Zugang Nord</text>
+    <text class="annotation-subtle" x="825" y="204" text-anchor="middle">Tunnel · Auto + zu Fuss</text>
+  </g>
+
+  <!-- Opposing tunnel access under the southern building row -->
+  <rect class="tunnel" x="640" y="682" width="60" height="114" rx="4" />
+  <path d="M670 876 V670" fill="none" stroke="#9a4f32" stroke-width="12" stroke-linecap="round" marker-end="url(#route-arrow)" />
+  <circle cx="670" cy="819" r="21" fill="#fffaf6" stroke="#9a4f32" stroke-width="7" />
+  <path d="M659 819 H681 M670 808 V830" stroke="#9a4f32" stroke-width="5" stroke-linecap="round" />
+  <g filter="url(#soft-shadow)">
+    <rect x="404" y="816" width="230" height="68" rx="32" fill="#9a4f32" />
+    <text class="annotation-light" x="519" y="845" text-anchor="middle">Zugang Süd</text>
+    <text class="annotation-subtle" x="519" y="868" text-anchor="middle">Tunnel · Auto + zu Fuss</text>
+  </g>
+
+  <rect x="12" y="12" width="976" height="976" rx="22" fill="none" stroke="#6a4963" stroke-width="8" />
+</svg>
