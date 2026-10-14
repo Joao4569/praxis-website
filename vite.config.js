@@ -43,7 +43,6 @@ const pages = [
   'index.html',
   'angebot/index.html',
   'team/index.html',
-  'praxis/index.html',
   'anfahrt/index.html',
   'kontakt/index.html',
   'notfall/index.html',

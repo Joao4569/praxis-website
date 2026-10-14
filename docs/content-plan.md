@@ -11,7 +11,6 @@ The practice name is “Psychotherapie Josefstrasse”. German (`de-CH`) is the 
 | `/team/`             | All four therapists at a glance            |
 | `/team/olivia-sala/` | Olivia's profile                           |
 | `/team/alex-isler/`  | Alex's profile                             |
-| `/praxis/`           | Rooms, approach, access, and location      |
 | `/anfahrt/`          | Diagram with access, parking, and entrance |
 | `/kontakt/`          | Direct, privacy-conscious contact paths    |
 | `/notfall/`          | Clearly separated urgent-help information  |

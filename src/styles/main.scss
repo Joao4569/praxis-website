@@ -270,10 +270,9 @@ main:focus {
   gap: 0.75rem;
   color: var(--praxis-ink);
 
-  small {
-    color: var(--praxis-muted);
-    font-size: 0.75rem;
-    font-weight: 400;
+  .brand-current strong {
+    font-size: 1.05rem;
+    line-height: 1.12;
   }
 }
 
@@ -805,26 +804,6 @@ main:focus {
   }
 }
 
-.location-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: clamp(1.75rem, 5vw, 4rem);
-  border: 1px dashed var(--praxis-forest);
-  border-radius: 1.5rem;
-  background: var(--praxis-paper);
-
-  > div {
-    max-width: 48rem;
-  }
-
-  > span {
-    color: var(--praxis-forest);
-    font-size: clamp(2rem, 5vw, 4rem);
-  }
-}
-
 .arrival-layout {
   display: grid;
   align-items: start;
@@ -1246,7 +1225,6 @@ main:focus {
   .btn,
   .service-card,
   .team-card,
-  .location-placeholder,
   .emergency-callout,
   .verification-note,
   .contact-panel {
@@ -1292,7 +1270,6 @@ main:focus {
     }
   }
 
-  .location-placeholder,
   .arrival-plan-card,
   .arrival-details,
   .contact-panel {
@@ -1383,10 +1360,6 @@ main:focus {
     padding-bottom: 0.15rem;
   }
 
-  .navbar-brand small {
-    font-size: 0.68rem;
-  }
-
   .site-header .brand-current strong {
     max-width: 11.5rem;
     font-size: 0.95rem;
@@ -1433,8 +1406,7 @@ main:focus {
     }
   }
 
-  .page-cta .container,
-  .location-placeholder {
+  .page-cta .container {
     align-items: flex-start;
     flex-direction: column;
   }
